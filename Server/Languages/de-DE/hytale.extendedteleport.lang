@@ -23,18 +23,18 @@ gui.visibility.public = Öffentlich (für alle sichtbar)
 gui.visibility.private = Privat (nur für dich sichtbar)
 
 # Access Settings
-gui.settings = Teleporter-Einstellungen
-gui.partyOnly = Nur Party (nur du und vertraute Spieler können ihn nutzen)
-gui.restricted = Beschränkt (nur du kannst ihn nutzen, überschreibt Nur-Party Einstellung)
-gui.lockInteraction = Einstellungen sperren (nur du und Vertraute können das GUI öffnen)
-gui.lockBreaking = Abbauen sperren (nur du und Vertraute können den Teleporter abbauen)
+gui.settings = Teleporter Einstellungen
+gui.partyOnly = Nur Vertraute (nur du und /trust Spieler können ihn nutzen)
+gui.restricted = Nur Ich (nur du kannst ihn nutzen, auch nicht /trust Spieler)
+gui.lockInteraction = Einstellungen sperren (Nur du kannst die Einstellungen ändern)
+gui.lockBreaking = Abbauen sperren (Nur du und /trust Spieler können den Teleporter abbauen)
 gui.displayWorld = Welt anzeigen (Welt in Warp-Liste anzeigen)
 gui.displayCoordinates = Koordinaten anzeigen (Position in Warp-Liste anzeigen)
 gui.hideMapWaypoint = Auf Karte ausblenden (keine Markierung auf der Karte setzen)
 gui.selfDestruct = Selbstzerstörung (öffentlich, unzerstörbar, zerstört sich nach 5 Min selber.)
 gui.selfDestructTimer = Selbstzerstörung in: {minutes}:{seconds}
 gui.selfDestructImminent = Selbstzerstörung steht kurz bevor!
-gui.singleUse = Einmalig (Teleporter wird nach Benutzung gelöscht)
+gui.singleUse = Einmaliger Teleporter (Wird nach Benutzung gelöscht)
 
 # Info Labels
 gui.location = Position: {dimension} ({x}, {y}, {z})
