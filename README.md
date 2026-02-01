@@ -126,6 +126,10 @@ If a translation key doesn't exist in the player's language, it falls back to En
 |----------|------|--------|-----------|
 | English (US) | `en-US` | ✅ Complete | Katomaro |
 | Portuguese (Brazil) | `pt-BR` | ✅ Complete | Katomaro |
+| German (DE) | `de-DE` | ✅ Complete | AZB |
+| Spanish | `es-ES` | PARTIAL -- The repository was not updated when the translators started | @zonazero y @carre321 |
+
+Temporary note regarding Spanish: totally my fault for not updating the repository. I added the missing keys using DeepL.
 
 ## Contributing Translations
 

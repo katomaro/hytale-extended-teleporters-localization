@@ -167,138 +167,138 @@ cmd.trustlist.total = Total: {count} jugador(es) confiable(s)
 # ============================================================
 # Commands - List
 # ============================================================
-cmd.list.description = List your teleporters
-cmd.list.header = === Your Teleporters ===
-cmd.list.header.all = All Teleporters
-cmd.list.header.yours = Your Teleporters
-cmd.list.header.format = === {title} ({total} total) ===
-cmd.list.pagination = Page {current}/{total} - Use /teleporter list <page> to navigate
-cmd.list.entry = {name} at {dimension} ({x}, {y}, {z})
-cmd.list.entryPrivate = [Private]
-cmd.list.entryRestricted = [Restricted]
-cmd.list.entryParty = [Party]
-cmd.list.empty = You have no teleporters.
-cmd.list.pageInfo = Page {current}/{total}
-cmd.list.unnamed = (unnamed)
-cmd.list.noDestination = (no destination)
-cmd.list.locationHidden = (location hidden)
-cmd.list.flag.private = [Private]
-cmd.list.flag.restricted = [Restricted]
-cmd.list.flag.settingsLocked = [SettingsLocked]
-cmd.list.flag.breakLocked = [BreakLocked]
-cmd.list.flag.hiddenWorld = [HiddenWorld]
-cmd.list.flag.hiddenCoords = [HiddenCoords]
-cmd.list.flag.server = [Server]
-cmd.list.flag.singleUse = [SingleUse]
+cmd.list.description = Listar tus teletransportadores
+cmd.list.header = === Tus Teletransportadores ===
+cmd.list.header.all = Todos los Teletransportadores
+cmd.list.header.yours = Tus Teletransportadores
+cmd.list.header.format = === {title} ({total} en total) ===
+cmd.list.pagination = Página {current}/{total} - Usa /teleporter list <página> para navegar
+cmd.list.entry = {name} en {dimension} ({x}, {y}, {z})
+cmd.list.entryPrivate = [Privado]
+cmd.list.entryRestricted = [Restringido]
+cmd.list.entryParty = [Grupo]
+cmd.list.empty = No tienes teletransportadores.
+cmd.list.pageInfo = Página {current}/{total}
+cmd.list.unnamed = (sin nombre)
+cmd.list.noDestination = (sin destino)
+cmd.list.locationHidden = (ubicación oculta)
+cmd.list.flag.private = [Privado]
+cmd.list.flag.restricted = [Restringido]
+cmd.list.flag.settingsLocked = [ConfigBloqueada]
+cmd.list.flag.breakLocked = [RoturaBloqueada]
+cmd.list.flag.hiddenWorld = [MundoOculto]
+cmd.list.flag.hiddenCoords = [CoordsOcultas]
+cmd.list.flag.server = [Servidor]
+cmd.list.flag.singleUse = [UsoÚnico]
 cmd.list.flag.selfDestruct.time = {minutes}:{seconds}
-cmd.list.flag.selfDestruct.expired = EXPIRED
-cmd.list.flag.selfDestruct.format = [SelfDestruct:{time}]
+cmd.list.flag.selfDestruct.expired = EXPIRADO
+cmd.list.flag.selfDestruct.format = [Autodestrucción:{time}]
 
 # ============================================================
 # Commands - Bypass
 # ============================================================
-cmd.bypass.description = Toggle bypass mode for teleporter restrictions
-cmd.bypass.enabled = Bypass mode enabled. You can now access all teleporters.
-cmd.bypass.disabled = Bypass mode disabled.
+cmd.bypass.description = Alternar modo bypass para restricciones de teletransportadores
+cmd.bypass.enabled = Modo bypass activado. Ahora puedes acceder a todos los teletransportadores.
+cmd.bypass.disabled = Modo bypass desactivado.
 
 # ============================================================
 # Commands - Go
 # ============================================================
-cmd.go.description = Teleport to a warp
-cmd.go.warpNotFound = Warp not found: {name}
-cmd.go.teleporting = Teleporting to {name}...
-cmd.go.cannotUse = You cannot use this teleporter.
-cmd.go.bypassRequired = You must enable bypass mode first: /teleporter bypass
-cmd.go.notFound = Teleporter not found: {name}
-cmd.go.useListHint = Use /teleporter list to see available teleporters.
-cmd.go.worldNotLoaded = World not loaded: {world}
-cmd.go.success = Teleported to: {name}
-cmd.go.successCrossWorld = Teleported to: {name} in {world}
-cmd.go.failed = Failed to teleport - player reference invalid.
+cmd.go.description = Teletransportarse a un warp
+cmd.go.warpNotFound = Warp no encontrado: {name}
+cmd.go.teleporting = Teletransportando a {name}...
+cmd.go.cannotUse = No puedes usar este teletransportador.
+cmd.go.bypassRequired = Debes activar el modo bypass primero: /teleporter bypass
+cmd.go.notFound = Teletransportador no encontrado: {name}
+cmd.go.useListHint = Usa /teleporter list para ver los teletransportadores disponibles.
+cmd.go.worldNotLoaded = Mundo no cargado: {world}
+cmd.go.success = Teletransportado a: {name}
+cmd.go.successCrossWorld = Teletransportado a: {name} en {world}
+cmd.go.failed = Error al teletransportar - referencia de jugador inválida.
 
 # ============================================================
 # Commands - Destination
 # ============================================================
-cmd.destination.description = Manage custom destinations
-cmd.destination.header = === Custom Destination Commands ===
-cmd.destination.help.create = /teleporter destination <name> <x> <y> <z> - Create a custom destination
-cmd.destination.help.list = /teleporter destination list - List all custom destinations
-cmd.destination.help.remove = /teleporter destination remove <name> - Remove a custom destination
-cmd.destination.help.set = /teleporter destination set <teleporter> <destination> - Link teleporter to destination
-cmd.destination.create.nameEmpty = Destination name cannot be empty.
-cmd.destination.create.alreadyExists = A custom destination with that name already exists: {name}
-cmd.destination.create.removeHint = Use /teleporter destination remove <name> to remove it first.
-cmd.destination.create.warpExists = A warp with that name already exists: {name}
-cmd.destination.create.success = Created custom destination: {name}
-cmd.destination.create.location = Location: {dimension} ({x}, {y}, {z})
-cmd.destination.create.linkHint = Use /teleporter destination set <teleporter> {name} to link a teleporter.
-cmd.destination.create.failed = Failed to create custom destination.
-cmd.destination.set.description = Set a custom destination
-cmd.destination.set.success = Set teleporter '{teleporter}' destination to '{destination}'
-cmd.destination.set.location = Location: {dimension} ({x}, {y}, {z})
-cmd.destination.set.failed = Failed to set teleporter destination.
-cmd.destination.set.teleporterNotFound = Teleporter not found: {name}
-cmd.destination.set.teleporterListHint = Use /teleporter list to see available teleporters.
-cmd.destination.set.destinationNotFound = Custom destination not found: {name}
-cmd.destination.set.destinationListHint = Use /teleporter destination list to see available destinations.
-cmd.destination.remove.description = Remove a custom destination
-cmd.destination.remove.success = Removed custom destination: {name}
-cmd.destination.remove.warning = Teleporters linking to this destination will no longer work.
-cmd.destination.remove.notFound = Custom destination not found: {name}
-cmd.destination.remove.listHint = Use /teleporter destination list to see available destinations.
-cmd.destination.remove.failed = Failed to remove custom destination.
-cmd.destination.list.description = List all custom destinations
-cmd.destination.list.header = === Custom Destinations ({count}) ===
+cmd.destination.description = Gestionar destinos personalizados
+cmd.destination.header = === Comandos de Destino Personalizado ===
+cmd.destination.help.create = /teleporter destination <nombre> <x> <y> <z> - Crear un destino personalizado
+cmd.destination.help.list = /teleporter destination list - Listar todos los destinos personalizados
+cmd.destination.help.remove = /teleporter destination remove <nombre> - Eliminar un destino personalizado
+cmd.destination.help.set = /teleporter destination set <teletransportador> <destino> - Vincular teletransportador a destino
+cmd.destination.create.nameEmpty = El nombre del destino no puede estar vacío.
+cmd.destination.create.alreadyExists = Ya existe un destino personalizado con ese nombre: {name}
+cmd.destination.create.removeHint = Usa /teleporter destination remove <nombre> para eliminarlo primero.
+cmd.destination.create.warpExists = Ya existe un warp con ese nombre: {name}
+cmd.destination.create.success = Destino personalizado creado: {name}
+cmd.destination.create.location = Ubicación: {dimension} ({x}, {y}, {z})
+cmd.destination.create.linkHint = Usa /teleporter destination set <teletransportador> {name} para vincular un teletransportador.
+cmd.destination.create.failed = Error al crear el destino personalizado.
+cmd.destination.set.description = Establecer un destino personalizado
+cmd.destination.set.success = Destino del teletransportador '{teleporter}' establecido a '{destination}'
+cmd.destination.set.location = Ubicación: {dimension} ({x}, {y}, {z})
+cmd.destination.set.failed = Error al establecer el destino del teletransportador.
+cmd.destination.set.teleporterNotFound = Teletransportador no encontrado: {name}
+cmd.destination.set.teleporterListHint = Usa /teleporter list para ver los teletransportadores disponibles.
+cmd.destination.set.destinationNotFound = Destino personalizado no encontrado: {name}
+cmd.destination.set.destinationListHint = Usa /teleporter destination list para ver los destinos disponibles.
+cmd.destination.remove.description = Eliminar un destino personalizado
+cmd.destination.remove.success = Destino personalizado eliminado: {name}
+cmd.destination.remove.warning = Los teletransportadores vinculados a este destino dejarán de funcionar.
+cmd.destination.remove.notFound = Destino personalizado no encontrado: {name}
+cmd.destination.remove.listHint = Usa /teleporter destination list para ver los destinos disponibles.
+cmd.destination.remove.failed = Error al eliminar el destino personalizado.
+cmd.destination.list.description = Listar todos los destinos personalizados
+cmd.destination.list.header = === Destinos Personalizados ({count}) ===
 cmd.destination.list.entry = {name}: {dimension} ({x}, {y}, {z})
-cmd.destination.list.empty = No custom destinations found.
-cmd.destination.list.createHint = Use /teleporter destination <name> <x> <y> <z> to create one.
+cmd.destination.list.empty = No se encontraron destinos personalizados.
+cmd.destination.list.createHint = Usa /teleporter destination <nombre> <x> <y> <z> para crear uno.
 
 # ============================================================
 # Commands - Server
 # ============================================================
-cmd.server.description = Manage server teleporters
-cmd.server.set.description = Mark a teleporter as server-owned
-cmd.server.set.notFound = No teleporter found at your location.
-cmd.server.set.success = Teleporter marked as server-owned.
-cmd.server.unset.description = Remove server teleporter status
-cmd.server.unset.success = Teleporter is no longer server-owned.
-cmd.server.notFound = Teleporter not found: {name}
-cmd.server.listHint = Use /teleporter list to see available teleporters.
-cmd.server.enabled = Teleporter '{name}' is now a SERVER teleporter.
-cmd.server.enabled.info1 = Settings are locked, but destination can still be changed.
-cmd.server.enabled.info2 = Users in bypass mode can interact normally.
-cmd.server.disabled = Teleporter '{name}' is no longer a server teleporter.
-cmd.server.disabled.info = Normal settings access restored.
+cmd.server.description = Gestionar teletransportadores del servidor
+cmd.server.set.description = Marcar un teletransportador como propiedad del servidor
+cmd.server.set.notFound = No se encontró ningún teletransportador en tu ubicación.
+cmd.server.set.success = Teletransportador marcado como propiedad del servidor.
+cmd.server.unset.description = Quitar estado de teletransportador del servidor
+cmd.server.unset.success = El teletransportador ya no es propiedad del servidor.
+cmd.server.notFound = Teletransportador no encontrado: {name}
+cmd.server.listHint = Usa /teleporter list para ver los teletransportadores disponibles.
+cmd.server.enabled = El teletransportador '{name}' ahora es un teletransportador del SERVIDOR.
+cmd.server.enabled.info1 = La configuración está bloqueada, pero el destino aún puede cambiarse.
+cmd.server.enabled.info2 = Los usuarios en modo bypass pueden interactuar normalmente.
+cmd.server.disabled = El teletransportador '{name}' ya no es un teletransportador del servidor.
+cmd.server.disabled.info = Acceso normal a la configuración restaurado.
 
 # ============================================================
 # Commands - Reload
 # ============================================================
-cmd.reload.description = Reload teleporter data from disk
-cmd.reload.success = Teleporter data reloaded successfully.
-cmd.reload.error = Error reloading teleporter data: {error}
+cmd.reload.description = Recargar datos de teletransportadores desde disco
+cmd.reload.success = Datos de teletransportadores recargados correctamente.
+cmd.reload.error = Error al recargar datos de teletransportadores: {error}
 
 # ============================================================
 # Interaction Messages
 # ============================================================
-msg.interaction.cannotInteract = You cannot interact with this teleporter.
-msg.interaction.cannotBreak = You cannot break this teleporter.
-msg.interaction.cannotUse = You cannot use this teleporter.
-msg.interaction.selfDestructActive = This teleporter is in self-destruct mode.
-msg.interaction.cooldown = You must wait 5 seconds between teleporter uses.
+msg.interaction.cannotInteract = No puedes interactuar con este teletransportador.
+msg.interaction.cannotBreak = No puedes romper este teletransportador.
+msg.interaction.cannotUse = No puedes usar este teletransportador.
+msg.interaction.selfDestructActive = Este teletransportador está en modo autodestrucción.
+msg.interaction.cooldown = Debes esperar 5 segundos entre usos del teletransportador.
 
 # ============================================================
 # Placement Messages
 # ============================================================
-msg.placement.limitReached = You have reached your teleporter limit ({current}/{max}).
-msg.placement.success = Teleporter placed successfully.
+msg.placement.limitReached = Has alcanzado tu límite de teletransportadores ({current}/{max}).
+msg.placement.success = Teletransportador colocado correctamente.
 
 # ============================================================
 # Error Messages
 # ============================================================
-error.teleporterNotFound = Teleporter not found.
-error.notOwner = You are not the owner of this teleporter.
-error.generic = An error occurred. Please try again.
-msg.error.teleporterNotFound = Error: Teleporter not found
+error.teleporterNotFound = Teletransportador no encontrado.
+error.notOwner = No eres el dueño de este teletransportador.
+error.generic = Ocurrió un error. Por favor, inténtalo de nuevo.
+msg.error.teleporterNotFound = Error: Teletransportador no encontrado
 
 # ============================================================
 # GUI - Trust Management
@@ -306,44 +306,44 @@ msg.error.teleporterNotFound = Error: Teleporter not found
 gui.manageTrust = Gestionar Copropietarios
 
 # Trust Management GUI
-trust.title = Trust Management
+trust.title = Gestión de Confianza
 trust.location = {dimension} ({x}, {y}, {z})
-trust.addPlayer = Add Trusted Player
-trust.playerNamePlaceholder = Enter player name
-trust.add = Add
-trust.trustedPlayers = Trusted Players
-trust.noTrustedPlayers = No trusted players yet. Add someone above.
-trust.permissionsFor = Permissions for {name}
-trust.remove = Remove Trust
-trust.save = Save Changes
-trust.close = Close
+trust.addPlayer = Añadir Jugador Confiable
+trust.playerNamePlaceholder = Escribe el nombre del jugador
+trust.add = Añadir
+trust.trustedPlayers = Jugadores Confiables
+trust.noTrustedPlayers = Aún no hay jugadores confiables. Añade a alguien arriba.
+trust.permissionsFor = Permisos para {name}
+trust.remove = Quitar Confianza
+trust.save = Guardar Cambios
+trust.close = Cerrar
 
 # Trust Permissions
-trust.perm.rename = Can Rename
-trust.perm.destination = Can Set Destination
-trust.perm.settings = Can Modify Settings
-trust.perm.break = Can Break
+trust.perm.rename = Puede Renombrar
+trust.perm.destination = Puede Establecer Destino
+trust.perm.settings = Puede Modificar Configuración
+trust.perm.break = Puede Romper
 
 # Trust Overview GUI
-trust.overview.title = Trust Overview
-trust.overview.selectTeleporter = Select a Teleporter
-trust.overview.noTeleporters = You don't have any teleporters.
-trust.overview.manage = Manage Trust
-trust.trustedCount = {count} trusted player(s)
+trust.overview.title = Vista General de Confianza
+trust.overview.selectTeleporter = Selecciona un Teletransportador
+trust.overview.noTeleporters = No tienes ningún teletransportador.
+trust.overview.manage = Gestionar Confianza
+trust.trustedCount = {count} jugador(es) confiable(s)
 
 # Trust Messages
-trust.noPermission = You don't have permission to manage trust on this teleporter.
-trust.teleporterNotFound = Teleporter not found.
-trust.saved = Trust settings saved!
-trust.add.emptyName = Please enter a player name.
-trust.add.notFound = Player not found or not online: {name}
-trust.add.cannotTrustOwner = You cannot trust yourself - you're already the owner!
-trust.add.alreadyTrusted = {name} is already trusted on this teleporter.
-trust.add.success = Added {name} as trusted.
+trust.noPermission = No tienes permiso para gestionar la confianza en este teletransportador.
+trust.teleporterNotFound = Teletransportador no encontrado.
+trust.saved = ¡Configuración de confianza guardada!
+trust.add.emptyName = Por favor, escribe un nombre de jugador.
+trust.add.notFound = Jugador no encontrado o no está online: {name}
+trust.add.cannotTrustOwner = No puedes confiar en ti mismo: ¡ya eres el dueño!
+trust.add.alreadyTrusted = {name} ya es confiable en este teletransportador.
+trust.add.success = {name} añadido como confiable.
 
 # Trust GUI Command
-cmd.trustgui.description = Open the Trust Management GUI
-cmd.trustgui.noTeleporters = You have no teleporters. Place one first!
+cmd.trustgui.description = Abrir la GUI de Gestión de Confianza
+cmd.trustgui.noTeleporters = No tienes teletransportadores. ¡Coloca uno primero!
 
 # ============================================================
 # Common
