@@ -284,6 +284,7 @@ msg.interaction.cannotInteract = You cannot interact with this teleporter.
 msg.interaction.cannotBreak = You cannot break this teleporter.
 msg.interaction.cannotUse = You cannot use this teleporter.
 msg.interaction.selfDestructActive = This teleporter is in self-destruct mode.
+msg.interaction.cooldown = You must wait 5 seconds between teleporter uses.
 
 # ============================================================
 # Placement Messages
